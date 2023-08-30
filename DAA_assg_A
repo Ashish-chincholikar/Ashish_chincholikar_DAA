@@ -1,0 +1,19 @@
+Practical No : 1
+========================
+-->Introduction to the DAA lab 
+-->understanding of the PO'S and CO'S
+-->Introduction to the CIA activities and group finalization
+=========================
+Implement a problem of number of zeroes.
+Statement: Given an array of 1s and 0s which has all
+1s first followed by all 0s? Find the number of 0s.
+Count the number of zeroes in the given arraya
+
+Input: arr[] = {1, 1, 1, 1, 0, 0} Output: 2
+Input: arr[] = {1, 0, 0, 0, 0}   Output: 4
+
+=========================
+Practical No : 2
+29/08/23
+-->Understood the Divide and Conqure stratergies used in Binary Search
+
