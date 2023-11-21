@@ -17,3 +17,58 @@ Practical No : 2
 29/08/23
 -->Understood the Divide and Conqure stratergies used in Binary Search
 
+=============================
+Problem Statment: 
+A2 : Implement a problem of move all zeroes to end of 
+array.
+Statement: Given an array of random numbers, Push all the zero’s 
+of a given array to the end of the array. For example, if the given 
+arrays is {1, 9, 8, 4, 0, 0, 2, 7, 0, 6, 0}, it should be changed to {1, 9, 
+8, 4, 2, 7, 6, 0, 0, 0, 0}. The order of all other elements should be 
+same.
+Input : arr[] = {1, 2, 0, 4, 3, 0, 5, 0};
+Output : arr[] = {1, 2, 4, 3, 5, 0, 0, 0};
+=============================
+code: 
+
+#include<iostream>
+using namespace std;
+
+void qsort(int arr[],int s,int e)
+{
+
+    if(s<e)
+    {
+        int i=s-1,temp;
+
+        for(int j=s;j<e+1;j++)
+        {
+
+            if(arr[j]>=arr[e])
+            {
+
+                i++;
+                temp=arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
+
+            }
+        }
+
+    qsort(arr,s,i-1);
+    qsort(arr,i+1,e);
+
+    }
+}
+
+int main()
+{
+    int arr[]={8,0,4,0,1,0,5},s=0;
+    int  e=(sizeof(arr)/4)-1;
+    qsort(arr,s,e);
+    for(int i=0;i<7;i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+    return 0;
+}
