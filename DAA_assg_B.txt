@@ -1,5 +1,5 @@
 B3 
-Problem statment : mplement a problem of minimum work to be done 
+Problem statment : Implement a problem of minimum work to be done 
 per day to finish given tasks within D days problem.
 Statement: Given an array task[] of size N denoting 
 amount of work to be done for each task, the problem 
